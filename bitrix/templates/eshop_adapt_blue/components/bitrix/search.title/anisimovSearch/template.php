@@ -27,8 +27,8 @@ if ($arParams["SHOW_INPUT"] !== "N"):?>
         <form action="<? echo $arResult["FORM_ACTION"]?>">
             <div class="bx_field">
                 <input id="<? echo $INPUT_ID?>" type="text" name="q" value="<?= htmlspecialcharsbx($_REQUEST["q"]) ?>"
-                       autocomplete="off" class="bx_input_text"/>
-                <input name="s" type="submit" value="" class="bx_input_submit"/>
+                       autocomplete="off" class="bx_input_text" placeholder="Введите название или артикул"/>
+                <input name="s" type="submit" value="Найти" class="bx_input_submit"/>
             </div>
         </form>
     </div>
